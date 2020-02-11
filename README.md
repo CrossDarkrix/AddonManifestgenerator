@@ -1,5 +1,5 @@
 # AddonManifestgenerator
-ウィザード形式でmanifest.jsonを作ります
+ウィザード形式でMinecraft BEの「manifest.json」を作ります
 
 *ManifestGenerator[Ja] -> 日本語*
 
