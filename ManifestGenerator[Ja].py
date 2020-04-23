@@ -227,7 +227,7 @@ if pack_type == 'data':
 else:
 	pass
 if pack_type == 'resources':
-	DataR_branch_point = input("データパック(1) or (0)？: ")
+	DataR_branch_point = input("データパック(1) or ノーマル(0)？: ")
 	if DataR_branch_point == '1':
 		Data_Resources_pack()
 	if DataR_branch_point == '0':
