@@ -5,7 +5,7 @@ import uuid
 import sys
 
 #User Input
-print("◆◆◆ Minecraft Addon Manifest Generator(EN) v1.5.1 ◆◆◆")
+print("◆◆◆ Minecraft Addon Manifest Generator(EN) v1.5.5 ◆◆◆")
 pack_name = input("Pack Name: ")
 descript = input("Pack Description: ")
 pack_type = input("Pack Type(resources(ResourcePack) or data(behava pack) or skins(Skin Pack))?: ").replace('Skins','skins').replace('Data','data').replace('DATA','data').replace('Resources','resources').replace('Respack','resources').replace('Sinks','skins').replace('SkinPack','skins').replace('behava pack','data').replace('ResourcePack','resources').replace('Skin Pack','skins').replace('skin','skins').replace('behavapack','data')
@@ -218,6 +218,7 @@ if pack_type == 'data':
 	behava_pack()
 else:
 	pass
+
 if pack_type == 'resources':
 	DataR_branch_point = input("DataPack?(1) or Normal?(0): ")
 	if DataR_branch_point == '1':
@@ -228,11 +229,10 @@ if pack_type == 'resources':
 		Data_Resources_pack()
 	if DataR_branch_point == 'Normal':
 		Resources_pack()
-else:
 	if DataR_branch_point == '':
 		sys.exit("Error: Input Empty!")
-	else:
-		pass
+else:
+	pass
 if pack_type == 'skins':
 	print("\n>>Selected Skin Pack!\n")
 	skin_pack()

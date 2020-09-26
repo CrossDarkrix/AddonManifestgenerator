@@ -11,7 +11,7 @@ import uuid
 import sys
 
 #ユーザー入力
-print("◆◆◆ Minecraft Addon Manifest Generator(Ja) v1.5.1 ◆◆◆")
+print("◆◆◆ Minecraft Addon Manifest Generator(Ja) v1.5.5 ◆◆◆")
 pack_name = input("Pack名: ")
 descript = input("Packの説明文: ")
 pack_type = input("Packのタイプ(resources(リソースパック) or data(ビヘイビアー) or skins(スキンパック))?: ").replace('Skins','skins').replace('Data','data').replace('DATA','data').replace('Resources','resources').replace('Respack','resources').replace('Sinks','skins').replace('SkinPack','skins').replace('スキン', 'skins').replace('スキンパック', 'skins').replace('リソースパック','resources').replace('ビヘイビアー', 'data').replace('skin','skins')
@@ -226,6 +226,7 @@ if pack_type == 'data':
 	behava_pack()
 else:
 	pass
+
 if pack_type == 'resources':
 	DataR_branch_point = input("データパック(1) or ノーマル(0)？: ")
 	if DataR_branch_point == '1':
@@ -236,11 +237,10 @@ if pack_type == 'resources':
 		Data_Resources_pack()
 	if DataR_branch_point == 'ノーマル':
 		Resources_pack()
-else:
 	if DataR_branch_point == '':
 		sys.exit("エラー: 入力された文字列が空欄でした")
-	else:
-		pass
+else:
+	pass
 
 if pack_type == 'skins':
 	print("\n>>Skinパックを選択しました!\n")
