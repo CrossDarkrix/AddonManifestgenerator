@@ -131,7 +131,7 @@ def Resources_pack():
 	pack_ver = input('Packのバージョン: ').replace('.',',').replace(' ',',')
 	#Json Template
 	raw_manifest = ("""{
-	   "format_version" : 2,
+	   "format_version" : 1,
 	   "header" : {
 		  "description" : "",
 		  "name" : "",
