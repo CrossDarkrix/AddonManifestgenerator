@@ -24,7 +24,7 @@ def behava_pack():
 
 	#Json Template
 	raw_manifest = ("""{
-	   "format_version" : 1,
+	   "format_version" : 2,
 	   "header" : {
 		  "description" : "",
 		  "name" : "",
