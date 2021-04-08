@@ -206,7 +206,7 @@ def skins_pack():
 	#ここからJSON内の値変更
 	#"header"部分の値変更
 	load_manifest['header']['description'] = descript
-	load_manifest['header']['name'] = 'skinpack'
+	load_manifest['header']['name'] = pack_name
 	load_manifest['header']['uuid'] = uuid_1
 
 	#"modules"部分の値変更
