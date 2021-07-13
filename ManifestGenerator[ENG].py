@@ -14,7 +14,7 @@ def behava_pack():
         sys.exit(0)
 
     min_engines = input("min_engine Version(Default: 1.11.0): ")
-    if "," in min_engines:
+    if "." in min_engines:
         min_engines = min_engines.replace(".", ",")
     elif " " in min_engines:
         min_engines = min_engines.replace(" ", ",")
@@ -75,7 +75,7 @@ def Data_Resources_pack():
         sys.exit(0)
 
     min_engines = input("min_engine Version(Default: 1.11.0): ")
-    if "," in min_engines:
+    if "." in min_engines:
         min_engines = min_engines.replace(".", ",")
     elif " " in min_engines:
         min_engines = min_engines.replace(" ", ",")
